@@ -1,0 +1,30 @@
+{
+  "name": "graphql-todo",
+  "version": "1.0.0",
+  "description": "This is a GraphQL API for todo application",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --no-deprecation --timeout 10000 --require ts-node/register **/*.spec.ts",
+    "dev": "nodemon --no-deprecation --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/app.ts",
+    "lint": "tslint -c tslint.json 'src/**/*.ts' --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.3.0",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "mocha": "^6.2.2",
+    "mocha-typescript": "^1.1.17",
+    "nodemon": "^2.0.0",
+    "sinon": "^7.5.0",
+    "ts-node": "^8.5.2",
+    "tslint": "^5.20.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.7.2"
+  }
+}
